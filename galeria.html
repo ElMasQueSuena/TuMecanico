@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Mecanico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./resources/images/logo.gif" class="rounded float-start" alt="Mecanico" height="70">
+        </a> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="mecanicos.html">Mecanicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html">Login</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="galeria.html">Pintura</a></li>
+                <li><a class="dropdown-item" href="galeria.html">Revision</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="galeria.html">Atencion</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col">
+          <!--Fist Galeria Electric-->
+          <div id="carouselExampleCaptions" class="carousel slide" style="background: #1c1c1c;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./resources/images/carousel_eletrico_1.jpg" class="rounded mx-auto d-block img-fluid" alt="Cambio Aceite">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cambio Aceite</h5>
+                  <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="./resources/images/carousel_eletrico_3.jpg" class="rounded mx-auto d-block img-fluid" alt="Manutencion Motor">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cambio de motor</h5>
+                  <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="./resources/images/carousel_eletrico_2.jpg" class="rounded mx-auto d-block img-fluid" alt="Cambio Bujia">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cambio Bujia</h5>
+                  <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+        <div class="col">
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Mecanico</th>
+                <th scope="col">Descripcion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>21/Mar/23</td>
+                <td>Lorem ipsum</td>
+                <td align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+
+  <!--Start Division-->
+  <hr class="mt-2 mb-3"/>
+  <!--End Division-->
+    <div class="container text-center">
+    <div class="row align-items-start">
+    <div class="col">
+    <!--Second galeria mechanic-->
+    <div id="carouselmecanico" class="carousel slide" style="background: #1c1c1c;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselmecanico" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselmecanico" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselmecanico" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./resources/images/carousel_motor_1.jpg" class="rounded mx-auto d-block img-fluid" alt="Cambio Aceite">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cambio Aceite</h5>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./resources/images/carousel_motor_2.jpg" class="rounded mx-auto d-block img-fluid" alt="Manutencion Motor">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Revision Motor</h5>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./resources/images/carousel_motor_3.jpg" class="rounded mx-auto d-block img-fluid" alt="Cambio Bujia">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cambio de Filtro de aire</h5>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmecanico" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselmecanico" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+  <div class="col">
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Fecha</th>
+          <th scope="col">Mecanico</th>
+          <th scope="col">Descripcion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>21/Mar/23</td>
+          <td>Lorem ipsum</td>
+          <td align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+  <!--Start Division-->
+  <hr class="mt-2 mb-3"/>
+  <!--End Division-->
+
+  <div class="container text-center">
+  <div class="row align-items-start">
+  <div class="col">
+    <!--third Galeria-->
+    <div id="carouselBoyShop" class="carousel slide" style="background: #1c1c1c;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselBoyShop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselBoyShop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselBoyShop" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./resources/images/carousel_pintura_1.jpg" class="rounded mx-auto d-block img-fluid" alt="Cambio Aceite">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Pintura</h5>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./resources/images/carousel_pintura_2.jpg" class="rounded mx-auto d-block img-fluid" alt="Manutencion Motor">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Arreglo choque/rayones</h5>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./resources/images/carousel_pintura_3.jpg" class="rounded mx-auto d-block img-fluid" alt="Cambio Bujia">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cambio Estetico</h5>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoyShop" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBoyShop" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+  <div class="col">
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Fecha</th>
+          <th scope="col">Mecanico</th>
+          <th scope="col">Descripcion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>21/Mar/23</td>
+          <td>Lorem ipsum</td>
+          <td align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+<footer>
+  <div class="contenedor-footer">
+      <div class="content-foo">
+          <h4>Phone</h4>
+          <p>8296312</p>
+      </div>
+      <div class="content-foo">
+          <h4>Correo</h4>
+          <p>martinvergara452@gmail.com</p>
+      </div>
+      <div class="content-foo">
+          <h4>Direccion</h4>
+          <p>villa anguita</p>
+      </div>
+  </div>
+  <h2 class="titulo-final">&copy; Martin Design | Martin Vergara</h2>
+</footer>
+    <!--End Galery Component-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+  </script>
+</body>
+</html>
